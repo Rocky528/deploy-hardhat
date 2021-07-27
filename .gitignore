@@ -2,7 +2,7 @@ node_modules
 build
 artifacts
 cache
-types/contracts
+typechain
 package-lock.json
 .env
 .vscode
