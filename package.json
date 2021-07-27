@@ -6,7 +6,9 @@
   "keywords": [
     "ethereum",
     "smart-contracts",
-    "hardhat"
+    "hardhat",
+    "avalanche",
+    "matic"
   ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts}\" && solhint contracts/**/*.sol",
@@ -30,6 +32,22 @@
     "deploy:prod:reset": "hardhat deploy --network mainnet --reset",
     "deploy:prod:tag": "sh -c 'hardhat deploy --network mainnet --tags ${0}'",
     "deploy:prod:tag:reset": "sh -c 'hardhat deploy --network mainnet --tags ${0} --reset'",
+    "deploy:fuji": "hardhat deploy --network fuji",
+    "deploy:fuji:reset": "hardhat deploy --network fuji --reset",
+    "deploy:fuji:tag": "sh -c 'hardhat deploy --network fuji --tags ${0}'",
+    "deploy:fuji:tag:reset": "sh -c 'hardhat deploy --network fuji --tags ${0} --reset'",
+    "deploy:avalanche": "hardhat deploy --network avalanche",
+    "deploy:avalanche:reset": "hardhat deploy --network avalanche --reset",
+    "deploy:avalanche:tag": "sh -c 'hardhat deploy --network avalanche --tags ${0}'",
+    "deploy:avalanche:tag:reset": "sh -c 'hardhat deploy --network avalanche --tags ${0} --reset'",
+    "deploy:matic_testnet": "hardhat deploy --network matic_testnet",
+    "deploy:matic_testnet:reset": "hardhat deploy --network matic_testnet --reset",
+    "deploy:matic_testnet:tag": "sh -c 'hardhat deploy --network matic_testnet --tags ${0}'",
+    "deploy:matic_testnet:tag:reset": "sh -c 'hardhat deploy --network matic_testnet --tags ${0} --reset'",
+    "deploy:matic": "hardhat deploy --network matic",
+    "deploy:matic:reset": "hardhat deploy --network matic --reset",
+    "deploy:matic:tag": "sh -c 'hardhat deploy --network matic --tags ${0}'",
+    "deploy:matic:tag:reset": "sh -c 'hardhat deploy --network matic --tags ${0} --reset'",
     "logs": "hardhat remove-logs",
     "clean": "hardhat clean",
     "accounts": "hardhat accounts",

@@ -62,6 +62,26 @@ const config: HardhatUserConfig = {
       url: node_url('goerli'),
       accounts: accounts('goerli'),
     },
+    fuji: {
+      url: node_url('fuji'),
+      gasPrice: 225000000000,
+      chainId: 43113,
+      accounts: accounts('fuji'),
+    },
+    avalanche: {
+      url: node_url('avalanche'),
+      gasPrice: 225000000000,
+      chainId: 43114,
+      accounts: accounts('avalanche'),
+    },
+    matic_testnet: {
+      url: node_url('matic_testnet'),
+      accounts: accounts('matic_testnet'),
+    },
+    matic: {
+      url: node_url('matic'),
+      accounts: accounts('matic'),
+    },
   },
   paths: {
     artifacts: './artifacts',

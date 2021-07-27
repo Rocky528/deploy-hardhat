@@ -2,7 +2,7 @@
 
 # Hardhat Deploy Example
 
-> A hardhat deploy example
+> A hardhat deploy example for ethereum, avalanche and matic
 
 [![Codechecks](https://raw.githubusercontent.com/codechecks/docs/master/images/badges/badge-green.svg?sanitize=true)](https://codechecks.io)
 [![CI](https://github.com/mariano-aguero/hardhat-deploy-example/workflows/CI/badge.svg)](https://github.com/mariano-aguero/hardhat-deploy-example/actions?query=workflow%3ACI)
@@ -12,6 +12,25 @@
 ```sh
 # Install dependencies
 yarn
+```
+
+## Some commands:
+```sh
+# Deploy to Ethereum testnet rinkeby
+yarn deploy:rinkeby
+
+# Deploy to Avalanche testnet Fuji
+yarn deploy:fuji
+
+# Deploy to Matic testnet
+yarn deploy:matic
+
+# Run Eslint
+yarn lint
+
+# Run Prettier
+yarn format
+
 ```
 
 ## Contributing
