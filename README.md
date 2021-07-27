@@ -23,7 +23,7 @@ yarn deploy:rinkeby
 yarn deploy:fuji
 
 # Deploy to Matic testnet
-yarn deploy:matic
+yarn deploy:matic_testnet
 
 # Run Eslint
 yarn lint
