@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "Hardhat deploy example repository",
   "license": "MIT",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "hardhat"
+  ],
   "scripts": {
     "lint": "eslint \"**/*.{js,ts}\" && solhint contracts/**/*.sol",
     "lint:fix": "eslint --fix \"**/*.{js,ts}\" && solhint --fix contracts/**/*.sol",
