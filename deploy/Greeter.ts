@@ -15,11 +15,11 @@ const func: DeployFunction = async (hre: HardhatRuntimeEnvironment) => {
     from: deployer,
     proxy: {
       owner: proxyOwner,
-      proxyContract: "OpenZeppelinTransparentProxy",
+      proxyContract: 'OpenZeppelinTransparentProxy',
       execute: {
-        methodName: "initialize",
+        methodName: 'initialize',
         args: ['Hello, world!'],
-      }
+      },
     },
     log: true,
   });
