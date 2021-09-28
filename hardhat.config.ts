@@ -3,7 +3,7 @@ dotenv.config({path: __dirname + '/.env'});
 
 import {node_url, accounts} from './utils/network';
 
-import {task, HardhatUserConfig} from 'hardhat/config';
+import {HardhatUserConfig} from 'hardhat/config';
 import '@nomiclabs/hardhat-waffle';
 import '@nomiclabs/hardhat-ethers';
 
@@ -16,15 +16,7 @@ import 'hardhat-contract-sizer';
 import '@typechain/hardhat';
 import 'solidity-coverage';
 
-// This is a sample Hardhat task. To learn how to create your own go to
-// https://hardhat.org/guides/create-task.html
-task('accounts', 'Prints the list of accounts', async (args, hre) => {
-  const accounts = await hre.ethers.getSigners();
-
-  for (const account of accounts) {
-    console.log(await account.address);
-  }
-});
+import "./tasks/accounts";
 
 const config: HardhatUserConfig = {
   // Your type-safe config goes here
