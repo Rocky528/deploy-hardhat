@@ -16,7 +16,7 @@ import 'hardhat-contract-sizer';
 import '@typechain/hardhat';
 import 'solidity-coverage';
 
-import "./tasks/accounts";
+import './tasks/accounts';
 
 const config: HardhatUserConfig = {
   // Your type-safe config goes here
