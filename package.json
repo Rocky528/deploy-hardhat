@@ -10,6 +10,10 @@
     "avalanche",
     "matic"
   ],
+  "author": {
+    "name": "Mariano Aguero",
+    "email": "mariano.aguero@gmail.com"
+  },
   "scripts": {
     "lint": "eslint \"**/*.{js,ts}\" && solhint contracts/**/*.sol",
     "lint:fix": "eslint --fix \"**/*.{js,ts}\" && solhint --fix contracts/**/*.sol",
